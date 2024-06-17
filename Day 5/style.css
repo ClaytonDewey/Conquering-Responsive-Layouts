@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: 80%;
+  max-width: 750px;
+  /* margin: 0 auto; */
+}
+
+.hero {
+  background: #23424a;
+  color: white;
+  padding: 9.25em 7.8125em;
+}
+
+.hero--content h1 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48.0529px;
+  line-height: 56px;
+}
+
+.hero--content p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 32px;
+  letter-spacing: 1px;
+  margin-bottom: 3.5em;
+}
+
+.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1em 3.125em;
+}
+
+.btn--cta {
+  background-color: #38cfd9;
+  color: #072a2d;
+  font-size: 21px;
+  font-weight: 700;
+  border-radius: 100px;
+}
