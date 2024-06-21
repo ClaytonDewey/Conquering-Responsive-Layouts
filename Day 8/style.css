@@ -23,14 +23,20 @@ body {
 
   /* default = row */
   flex-direction: row;
+
+  gap: 30px;
 }
 
 .col {
   /* these are now flex items */
-  background-color: limegreen;
   margin: 10px;
   width: 100%;
 }
+
+/* If you can't use gap */
+/* .col + .col {
+  margin-left: 100px;
+} */
 
 .hero {
   background: #23424a;
