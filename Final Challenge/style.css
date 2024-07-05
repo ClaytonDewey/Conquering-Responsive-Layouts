@@ -24,8 +24,34 @@ img {
   max-width: 100%;
 }
 
-/* header {
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--clr-white);
+  font-weight: 900;
+  background-color: var(--clr-primary);
+  padding: 0.75em 2em;
+  border-radius: 100px;
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: 0.75;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* added for nav-toggle positioning */
+  position: relative;
+}
+
+header {
   background: var(--clr-dark-gray);
+  padding: 1em 0;
+  text-align: center;
 }
 
 .nav-toggle {
@@ -45,10 +71,10 @@ img {
 .nav-toggle:focus,
 .nav-toggle:hover {
   opacity: 0.75;
-} */
+}
 
 /* Hamburger toggle */
-/* .hamburger {
+.hamburger {
   width: 50%;
   position: relative;
 }
@@ -74,4 +100,51 @@ img {
 
 .hamburger::after {
   transform: translateY(3px);
-} */
+}
+
+.nav {
+  width: 100%;
+  visibility: hidden;
+  height: 0;
+  position: absolute;
+  font-size: 1rem;
+}
+
+.nav--visible {
+  visibility: visible;
+  height: auto;
+  position: relative;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav__list--primary {
+  margin-bottom: 2em;
+}
+
+.nav__item {
+  margin-top: 0.75em;
+}
+
+.nav__link {
+  color: var(--clr-white);
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.nav__link--button {
+  padding: 0.25em 0.75em;
+  background-color: var(--clr-primary);
+  color: var(--clr-white);
+  border-radius: 100px;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+  opacity: 0.75;
+}
