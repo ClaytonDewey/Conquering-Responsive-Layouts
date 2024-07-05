@@ -1,0 +1,77 @@
+:root {
+  --clr-primary: #a59678;
+  --clr-white: #fff;
+  --clr-dark-gray: #2e323f;
+  --clr-medium-gray: #3b4050;
+  --clr-light-gray: #6f737f;
+  --ff-monserrat: 'Montserrat', sans-serif;
+  --ff-oswald: 'Oswald', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--ff-monserrat);
+}
+
+img {
+  max-width: 100%;
+}
+
+/* header {
+  background: var(--clr-dark-gray);
+}
+
+.nav-toggle {
+  cursor: pointer;
+  border: 0;
+  width: 3em;
+  height: 3em;
+  padding: 0;
+  border-radius: 50%;
+  background-color: var(--clr-light-gray);
+  color: var(--clr-white);
+  transition: opacity 250ms ease;
+  position: absolute;
+  left: 0;
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+  opacity: 0.75;
+} */
+
+/* Hamburger toggle */
+/* .hamburger {
+  width: 50%;
+  position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  display: block;
+  margin: 0 auto;
+  height: 3px;
+  background: var(--clr-white);
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  width: 100%;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
+} */

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conquering Responsive Layouts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+    <div class="container row">
+      <button class="nav-toggle" aria-label="open navigation">
+        <span class="hamburger"></span>
+      </button>
+      <a href="/" class="logo">
+        <img src="./img/logo.svg" alt="conquering responsive layouts">
+      </a>
+
+      <nav class="nav">
+        <ul class="nav__list nav__list--primary">
+          <li class="nav__item"><a href="/" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="/" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="/" class="nav__link">Contact</a></li>
+        </ul>
+        <ul class="nav__list nav__list--secondary">
+          <li class="nav__item"><a href="/" class="nav__link">Sign In</a></li>
+          <li class="nav__item"><a href="/" class="nav__link nav__link--button">Sign Up</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <div class="container row">
+        <div class="hero__text">
+          <div class="col">
+            <h1>Responsivelayouts don&rsquo;t have to be a struggle</h1>
+          </div>
+          <div class="col">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore
+              magna
+              aliqua. Ut enim ad minim veniam.</p>
+            <a href="/" class="btn">I want to learn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section--one">
+      <div class="container row">
+        <div class="col-third">
+          <h2 class="section-title">Mobile-first</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus ad, cum, fugit eum tempora suscipit
+            cupiditate dolorem iusto et eveniet magni vero. Repellendus, officiis porro!</p>
+        </div>
+        <div class="col-third">
+          <h2 class="section-title">Efficient</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus ad, cum, fugit eum tempora suscipit
+            cupiditate
+            dolorem iusto et eveniet magni vero. Repellendus, officiis porro!</p>
+        </div>
+        <div class="col-third">
+          <h2 class="section-title">Done right</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus ad, cum, fugit eum tempora suscipit
+            cupiditate
+            dolorem iusto et eveniet magni vero. Repellendus, officiis porro!</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section--two">
+      <div class="container row">
+        <div class="col-two-thirds">
+          <h2 class="section-title">It doesn&rsquo;t have to be hard</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum obcaecati mollitia explicabo. Quas quis
+            repudiandae neque? Quod veritatis corrupti doloremque, alias ipsum dicta, in unde, quibusdam nemo iure atque
+            qui ab modi architecto quaerat harum. Minus, reiciendis necessitatibus? Quae, quos.</p>
+          <img src="./img/hero-img.jpg" alt="">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum obcaecati mollitia explicabo. Quas quis
+            repudiandae neque? Quod veritatis corrupti doloremque, alias ipsum dicta, in unde, quibusdam nemo iure atque
+            qui ab modi architecto quaerat harum. Minus, reiciendis necessitatibus? Quae, quos.</p>
+        </div>
+        <div class="col-third">
+          <div class="row">
+            <div class="col">
+              <h2 class="section-title--light">Break it down</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas incidunt sit corrupti exercitationem
+                molestiae magni dignissimos natus reprehenderit veritatis? Nemo, quod modi!</p>
+            </div>
+            <div class="col">
+              <h2 class="section-title--light">Break it down</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas incidunt sit corrupti exercitationem
+                molestiae magni dignissimos natus reprehenderit veritatis? Nemo, quod modi!</p>
+            </div>
+            <div class="col">
+              <h2 class="section-title--light">Break it down</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas incidunt sit corrupti exercitationem
+                molestiae magni dignissimos natus reprehenderit veritatis? Nemo, quod modi!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <h2 class="footer-title">Just Scratching The Surface</h2>
+    <div class="row">
+      <div class="col-third">
+        <h2 class="section-title">About our company</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, aliquam culpa? Autem ducimus alias magni libero
+          sunt temporibus eaque est voluptate exercitationem!</p>
+      </div>
+      <div class="col-two-thirds">
+        <div class="row">
+          <div class="col">
+            <h2 class="section-title">Getting around</h2>
+            <nav class="nav__footer">
+              <ul class="nav__list--footer">
+                <li class="nav__item--footer"><a href="/" class="nav__link--footer">Home</a></li>
+                <li class="nav__item--footer"><a href="/" class="nav__link--footer">About</a></li>
+                <li class="nav__item--footer"><a href="/" class="nav__link--footer">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col">
+            <h2 class="section-title">Other things</h2>
+            <nav class="nav__footer">
+              <ul class="nav__list--footer">
+                <li class="nav__item--footer"><a href="/" class="nav__link--footer">Lorem ipsum</a></li>
+                <li class="nav__item--footer"><a href="/" class="nav__link--footer">dolor</a></li>
+                <li class="nav__item--footer"><a href="/" class="nav__link--footer">sit amet</a></li>
+                <li class="nav__item--footer"><a href="/" class="nav__link--footer">consectetur</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col">
+            <h2 class="section-title">And more</h2>
+            <nav class="nav__footer">
+              <ul class="nav__list--footer">
+                <li class="nav__item--footer"><a href="/" class="nav__link--footer">Lorem ipsum</a></li>
+                <li class="nav__item--footer"><a href="/" class="nav__link--footer">dolor</a></li>
+                <li class="nav__item--footer"><a href="/" class="nav__link--footer">sit amet</a></li>
+                <li class="nav__item--footer"><a href="/" class="nav__link--footer">consectetur</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
