@@ -40,6 +40,22 @@ h1 span {
   color: var(--clr-white);
 }
 
+.section-title {
+  color: var(--clr-primary);
+  font-size: 1.3125em;
+}
+
+.section-title--light {
+  color: var(--clr-white);
+  font-size: 1.875em;
+}
+
+.footer-title {
+  font-size: 3rem;
+  color: var(--clr-white);
+  text-align: center;
+}
+
 .btn {
   display: inline-block;
   text-decoration: none;
@@ -63,6 +79,11 @@ h1 span {
   margin: 0 auto;
   /* added for nav-toggle positioning */
   position: relative;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -176,7 +197,8 @@ header {
 
 .section-one,
 .section-two,
-.section-three {
+.section-three,
+.footer {
   padding: 5.5em 0;
 }
 
@@ -186,4 +208,63 @@ header {
 
   background-color: var(--clr-off-white);
   text-align: center;
+}
+
+.col-dark {
+  background-color: var(--clr-medium-gray);
+  color: var(--clr-white);
+  padding: 2em;
+  font-size: 1.125em;
+  line-height: 1.5;
+  text-align: center;
+  margin-top: 2em;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--clr-medium-gray);
+  color: var(--clr-white);
+  font-size: 1rem;
+}
+
+.nav__list--footer {
+  list-style-type: none;
+  margin: 0 0 2em;
+  padding: 0;
+}
+
+.nav__link--footer {
+  color: var(--clr-white);
+  text-decoration: none;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.nav__item--footer {
+  margin-bottom: 1em;
+}
+
+.nav__link--footer:hover,
+.nav__link--footer:active {
+  opacity: 0.7;
+}
+
+@media screen and (min-width: 700px) {
+  .row {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .col-two-thirds,
+  .col-third {
+    width: 100%;
+  }
+
+  .col-dark {
+    margin-top: 0;
+    width: 31%;
+  }
+
+  .col-dark + .col-dark {
+    /* margin-left: 0.25em; */
+  }
 }
