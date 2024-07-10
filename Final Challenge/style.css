@@ -200,6 +200,7 @@ header {
 .section-three,
 .footer {
   padding: 5.5em 0;
+  font-size: 1.3125em;
 }
 
 .section-one {
@@ -263,8 +264,26 @@ header {
     margin-top: 0;
     width: 31%;
   }
+}
 
-  .col-dark + .col-dark {
-    /* margin-left: 0.25em; */
+@media screen and (min-width: 1000px) {
+  .col-two-thirds {
+    width: 62%;
+  }
+
+  .col-third {
+    width: 31%;
+  }
+
+  .col-third .row {
+    flex-direction: column;
+  }
+
+  .col-third .row .col-dark {
+    width: 100%;
+  }
+
+  .col-third .row .col-dark + .col-dark {
+    margin-top: 2em;
   }
 }
